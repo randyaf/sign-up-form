@@ -24,35 +24,39 @@
                 </div>
                 <div class="right-middle-container">
                     <form>
-                        <h3>Let's do this!</h3>
-                        <div class="form-row">
-                            <label for="firstname">FIRST NAME</label>
-                            <input type="text" id="firstname" name="first_name" />
-                        </div>
-                        <div class="form-row">
-                            <label for="lastname">LAST NAME</label>
-                            <input type="text" id="lastname" name="last_name" />
-                        </div>
-                        <div class="form-row">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" />
-                        </div>
-                        <div class="form-row">
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" id="phone" name="phone" />
-                        </div>
-                        <div class="form-row">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" />
-                        </div>
-                        <div class="form-row">
-                            <label for="repassword">CONFIRM PASSWORD</label>
-                            <input type="password" id="repassword" />
+                        <div class="form-wrapper">
+                            <h3>Let's do this!</h3>
+                            <div class="input-wrapper">
+                                <div class="form-row">
+                                    <label for="firstname">FIRST NAME</label>
+                                    <input type="text" id="firstname" name="first_name" placeholder="John" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="lastname">LAST NAME</label>
+                                    <input type="text" id="lastname" name="last_name" placeholder="Doe" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="phone">PHONE NUMBER</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+1234567" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" id="password" name="password" />
+                                </div>
+                                <div class="form-row">
+                                    <label for="repassword">CONFIRM PASSWORD</label>
+                                    <input type="password" id="repassword" />
+                                </div>
+                            </div>
                         </div>
                         <button type="submit" class="create-account">Create Account</button>
                     </form>
-                    <p class="login-text">Already have an account? <span>Log in</span></p>
                 </div>
+                <p class="login-text">Already have an account? <span><a href="#">Log in</a></span></p>
             </div>
         </div>
     </body>
