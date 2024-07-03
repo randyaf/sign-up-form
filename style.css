@@ -108,6 +108,35 @@ body > .main-container {
     outline: none;
 }
 
+input:is(#email, #phone, #password, #repassword):invalid {
+    border: 1px solid red;
+}
+#email + div {
+    position: relative;
+}
+#email:invalid + div::after {
+    position: absolute;
+    content: "please use the correct email";
+    font-size: 8px;
+}
+#phone + div {
+    position: relative;
+}
+#phone:invalid + div::after {
+    position: absolute;
+    content: "please use the correct phone number";
+    font-size: 8px;
+}
+
+:is(#password, #repassword) + div {
+    position: relative;
+}
+:is(#password, #repassword):invalid + div::after {
+    position: absolute;
+    content: "please use the correct password";
+    font-size: 8px;
+}
+
 .right-middle-container button.create-account {
     font-size: 16px;
     font-weight: 700;
